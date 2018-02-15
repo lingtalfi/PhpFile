@@ -4,6 +4,8 @@
 namespace PhpFile;
 
 
+use Bat\FileSystemTool;
+
 class PhpFile
 {
 
@@ -51,7 +53,7 @@ class PhpFile
         return $this;
     }
 
-    public function render()
+    public function render($destination = null)
     {
         $br = PHP_EOL;
 
@@ -84,6 +86,13 @@ class PhpFile
             $s .= $statement . $br;
         }
         $s .= str_repeat(PHP_EOL, 2);
+
+
+        if (null !== $destination) {
+            FileSystemTool::mkfile($destination, $s);
+        }
+
+
         return $s;
     }
 
