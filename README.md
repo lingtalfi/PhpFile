@@ -14,7 +14,7 @@ Install
 ==========
 Using the [uni](https://github.com/lingtalfi/universe-naive-importer) command.
 ```bash
-uni import PhpFile
+uni import Ling/PhpFile
 ```
 
 Or just download it and place it where you want otherwise.
@@ -31,8 +31,8 @@ Example in a [kamille](https://github.com/lingtalfi/kamille) app.
 <?php
 
 use Core\Services\A;
-use PhpFile\PhpFile;
-use QuickPdo\QuickPdo;
+use Ling\PhpFile\PhpFile;
+use Ling\QuickPdo\QuickPdo;
 
 // using kamille framework here (https://github.com/lingtalfi/kamille)
 require_once __DIR__ . "/../boot.php";
@@ -50,11 +50,11 @@ echo PhpFile::create()
     ->addUseStatement(<<<EEE
 use Kamille\Utils\Morphic\Helper\MorphicHelper;
 use Module\Ekom\Back\User\EkomNullosUser;
-use SokoForm\Form\SokoFormInterface;
-use SokoForm\Form\SokoForm;
-use SokoForm\Control\SokoAutocompleteInputControl;
-use SokoForm\Control\SokoInputControl;
-use SokoForm\Control\SokoChoiceControl;
+use Ling\SokoForm\Form\SokoFormInterface;
+use Ling\SokoForm\Form\SokoForm;
+use Ling\SokoForm\Control\SokoAutocompleteInputControl;
+use Ling\SokoForm\Control\SokoInputControl;
+use Ling\SokoForm\Control\SokoChoiceControl;
 use Module\Ekom\Utils\E;
 EEE
     )
@@ -77,11 +77,11 @@ EEE
 
 use Kamille\Utils\Morphic\Helper\MorphicHelper;
 use Module\Ekom\Back\User\EkomNullosUser;
-use SokoForm\Form\SokoFormInterface;
-use SokoForm\Form\SokoForm;
-use SokoForm\Control\SokoAutocompleteInputControl;
-use SokoForm\Control\SokoInputControl;
-use SokoForm\Control\SokoChoiceControl;
+use Ling\SokoForm\Form\SokoFormInterface;
+use Ling\SokoForm\Form\SokoForm;
+use Ling\SokoForm\Control\SokoAutocompleteInputControl;
+use Ling\SokoForm\Control\SokoInputControl;
+use Ling\SokoForm\Control\SokoChoiceControl;
 use Module\Ekom\Utils\E;
 
 

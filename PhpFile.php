@@ -1,10 +1,10 @@
 <?php
 
 
-namespace PhpFile;
+namespace Ling\PhpFile;
 
 
-use Bat\FileSystemTool;
+use Ling\Bat\FileSystemTool;
 
 class PhpFile
 {
